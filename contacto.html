@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Tienda de Mascotas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Tienda de Mascotas</h1>
+  </header>
+
+  <main>
+    <h2>Contacto</h2>
+    <p>Si necesitas más información sobre nuestros productos o servicios, o tienes alguna duda o sugerencia, no dudes en contactarnos. Completa el siguiente formulario y te responderemos a la brevedad.</p>
+    
+    <form method="POST" action="formulario.py">
+      <div class="grupo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="grupo">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="grupo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="grupo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+
+      <div class="grupo">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tienda de Mascotas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
